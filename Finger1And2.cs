@@ -8,10 +8,8 @@ public class Finger1And2 : MonoBehaviour {
     public HandModelBase leftHandModel;
     public HandModelBase rightHandModel;
     float twoFingerDistance = 0.07f;
-    // 1.判断两个手指捏合
-    // 2.判断两个手靠近
-    // 3.生成cube
-    // Use this for initialization
+    //HELLOW
+   // Use this for initialization
     void Start () {
 		
 	}
@@ -23,7 +21,7 @@ public class Finger1And2 : MonoBehaviour {
             Hand leftHand = leftHandModel.GetLeapHand();
             if ((leftHand.Fingers[0].TipPosition - leftHand.Fingers[1].TipPosition).Magnitude < twoFingerDistance)
             {
-                print("LeftHand！");
+                print("LeftHand�?");
               
             }
         }
@@ -35,7 +33,7 @@ public class Finger1And2 : MonoBehaviour {
             Hand leftHand = leftHandModel.GetLeapHand();
             if ((leftHand.Fingers[0].TipPosition - leftHand.Fingers[1].TipPosition).Magnitude > twoFingerDistance)
             {
-                print("開花");
+                print("??????");
                 
             }
         }
@@ -49,7 +47,7 @@ public class Finger1And2 : MonoBehaviour {
                 (leftHand.Fingers[0].TipPosition - leftHand.Fingers[3].TipPosition).Magnitude > twoFingerDistance&&
                 (leftHand.Fingers[0].TipPosition - leftHand.Fingers[4].TipPosition).Magnitude > twoFingerDistance)
             {
-                print("五指張開");
+                print("�????張�??");
                 
             }
         }
@@ -62,7 +60,7 @@ public class Finger1And2 : MonoBehaviour {
             Hand rightHand = rightHandModel.GetLeapHand();
             if ((rightHand.Fingers[0].TipPosition - rightHand.Fingers[1].TipPosition).Magnitude < twoFingerDistance)
             {
-                print("RightHand！");
+                print("RightHand�?");
             }
         }
     }
