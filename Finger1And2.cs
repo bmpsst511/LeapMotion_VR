@@ -21,7 +21,7 @@ public class Finger1And2 : MonoBehaviour {
             Hand leftHand = leftHandModel.GetLeapHand();
             if ((leftHand.Fingers[0].TipPosition - leftHand.Fingers[1].TipPosition).Magnitude < twoFingerDistance)
             {
-                print("LeftHandï¼?");
+                print("LeftHand");
               
             }
         }
@@ -33,7 +33,7 @@ public class Finger1And2 : MonoBehaviour {
             Hand leftHand = leftHandModel.GetLeapHand();
             if ((leftHand.Fingers[0].TipPosition - leftHand.Fingers[1].TipPosition).Magnitude > twoFingerDistance)
             {
-                print("??????");
+                print("Grasp");
                 
             }
         }
@@ -47,7 +47,7 @@ public class Finger1And2 : MonoBehaviour {
                 (leftHand.Fingers[0].TipPosition - leftHand.Fingers[3].TipPosition).Magnitude > twoFingerDistance&&
                 (leftHand.Fingers[0].TipPosition - leftHand.Fingers[4].TipPosition).Magnitude > twoFingerDistance)
             {
-                print("äº????å¼µé??");
+                print("Close to Palm");
                 
             }
         }

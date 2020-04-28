@@ -13,7 +13,7 @@ void Start ()
 
 void Update ()
 {
-    /****檢測是左手還是右手 *****/
+
     /*Frame frame = provider.CurrentFrame;
     foreach (Hand hand in frame.Hands)
     {
@@ -27,7 +27,6 @@ void Update ()
         }
     }*/
 
-    /****檢測是否雙手同時出現 *****/
     Frame frame = provider.CurrentFrame; // controller is a Controller object
     if(frame.Hands.Count > 1){
     List<Hand> hands = frame.Hands;
