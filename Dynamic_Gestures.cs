@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 //引入庫  
@@ -17,8 +17,18 @@ public class Wait_for_sec : MonoBehaviour
     public float deltaVelocity = 0.7f; //手部滑動的速度閥
     public float accq_freq = 0;//invoke repeating的擷取頻率
 
-    public List<bool> judge; //宣告一個bool屬性的List
-  
+    public List<bool> judge_LeftHanddown; //宣告一個bool屬性的list給左手向下揮
+    public List<bool> judge_LeftHandup;//宣告一個bool屬性的list給左手向上揮
+
+    /*** define the animation label of model***/
+    public Animator Anim;
+    public AnimatorStateInfo BS;
+    public int Happy = Animator.StringToHash("Base Layer.happy");
+    public int Sad = Animator.StringToHash("Base Layer.sad");
+    public int Disgust = Animator.StringToHash("Base Layer.disgust");   
+    /*** define the animation label of model***/
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,24 +37,30 @@ public class Wait_for_sec : MonoBehaviour
         //在Start先塞20個false給judge array list
         for(int i =0; i<=19; i++)
         {
-            judge.Add(false);
+            judge_LeftHanddown.Add(false);
+        }
+        for(int i =0; i<=19; i++)
+        {
+            judge_LeftHandup.Add(false);
         }
 
-        InvokeRepeating("LaunchProjectile", 2.0f, accq_freq); //Invoke playmode後兩秒開始執行,之後每隔acc_freq執行一次
+        InvokeRepeating("Stroking", 2.0f, accq_freq); //Invoke playmode後兩秒開始執行,之後每隔acc_freq執行一次
     }
 
     //Invoke呼叫之函數
-    void LaunchProjectile()
+    void Stroking()
     {   
         Frame frame = provider.CurrentFrame; // controller is a Controller object
 
         //移除list的開頭數據,在無判斷到手勢的時候一直刷新list
-        judge.RemoveAt(0);
+        judge_LeftHanddown.RemoveAt(0);
+        judge_LeftHandup.RemoveAt(0);
 
         //偵測不到手的模型時將false塞入list裡
         if (!leftHandModel.IsTracked) 
         {
-            judge.Add(false);
+            judge_LeftHanddown.Add(false);
+            judge_LeftHandup.Add(false);
             return;
         }
         
@@ -55,17 +71,27 @@ public class Wait_for_sec : MonoBehaviour
         float Pitch = leftHand.Direction.Pitch;
         float yaw = leftHand.Direction.Yaw;
         float roll = leftHand.Direction.Roll;
-        print(yaw);
+        //print(yaw);
         
         //判斷到手部模型並判斷有下滑手勢時,將true塞入list裡
         if (IsMoveDown(leftHand))
         {
-            judge.Add(true); 
+            judge_LeftHanddown.Add(true); 
             //print("下滑");
         }
         else
         {
-            judge.Add(false);
+            judge_LeftHanddown.Add(false);
+        }
+
+        if (IsMoveUp(leftHand))
+        {
+            judge_LeftHandup.Add(true); 
+            //print("下滑");
+        }
+        else
+        {
+            judge_LeftHandup.Add(false);
         }
     }
 
@@ -73,24 +99,36 @@ public class Wait_for_sec : MonoBehaviour
      void FixedUpdate()
     {   
         //知道list的長度
-        int length = judge.Count;
+        int length_down = judge_LeftHanddown.Count;
+        int length_up = judge_LeftHandup.Count;
+
         //給定初始次數為0
-        int count=0;
+        int count_down=0;
+        int count_up=0;
         //print(judge.Count);
 
         //如果判斷到list裡的flag為true則次數+1
-        foreach(bool flag in judge )
+        foreach(bool flag in judge_LeftHanddown )
         {
             if(flag)
             {
-                count++;
+                count_down++;
+            }
+        }
+
+        foreach(bool flag in judge_LeftHandup)
+        {
+            if(flag)
+            {
+                count_up++;
             }
         }
          //當次數>5的時候執行需要的動作
-         if(count > 5)
+         if(count_down > 6 && count_up > 6)
          { 
             //需要的功能 
-            Debug.Log("yayayayayaya");
+            Debug.Log("User dynamic touch");
+            Anim.SetBool("hap",true);
          }
       
     }
@@ -216,32 +254,5 @@ public class Wait_for_sec : MonoBehaviour
     {
         return hand.PalmVelocity.y < -deltaVelocity;
     }
-
-
-    /// <summary>
-    /// 判斷四指是否靠向掌心
-    /// </summary>
-    /// <param name="hand"></param>
-    /// <returns></returns>
-    bool CheckFingerCloseToHand(Hand hand)
-    {
-        List<Finger> listOfFingers = hand.Fingers;
-        int count = 0;
-        for (int f = 0; f < listOfFingers.Count; f++)
-        {
-            Finger finger = listOfFingers[f];
-            if ((finger.TipPosition - hand.PalmPosition).Magnitude < 0.05f)
-            {
-                if (finger.Type == Finger.FingerType.TYPE_THUMB)
-                {
-                    return false;
-                }
-                else
-                {
-                    count++;
-                }
-            }
-        }
-        return (count == 4);
-    }
+    
 }
