@@ -24,6 +24,7 @@ namespace Leap.Unity.Interaction
     [AddComponentMenu("")]
     public class ContactBone : MonoBehaviour
     {
+        public static bool cup1Detected = false, cup2Detected = false, cup3Detected = false;
 
         /// <summary>
         /// ContactBones minimally require references to their InteractionControllerBase,
@@ -155,6 +156,34 @@ namespace Leap.Unity.Interaction
                         }
                     }
 
+                    /*******************************/
+                    //Check for a match with the specified name on any GameObject that collides with your GameObject
+                    if (collision.gameObject.name == "speedStack_1")
+                    {
+                        //If the GameObject's name matches the one you suggest, output this message in the console
+                        cup1Detected = true;
+                        cup2Detected = false;
+                        cup3Detected = false;
+                        //Debug.Log("cup_1");
+                    }
+                    if (collision.gameObject.name == "speedStack_2")
+                    {
+                        //If the GameObject's name matches the one you suggest, output this message in the console
+                        cup2Detected = true;
+                        cup1Detected = false;
+                        cup3Detected = false;
+                        //Debug.Log("cup_2");
+                    }
+                    if (collision.gameObject.name == "speedStack_3")
+                    {
+                        //If the GameObject's name matches the one you suggest, output this message in the console
+                        cup3Detected = true;
+                        cup1Detected = false;
+                        cup2Detected = false;
+                        //Debug.Log("cup_3");
+                    }
+                    /*******************************/
+
                     if (collision.impulse.magnitude > 0f)
                     {
                         if (!contactingInteractionBehaviours.ContainsKey(interactionObj))
@@ -190,7 +219,10 @@ namespace Leap.Unity.Interaction
 
         void OnCollisionExit(Collision collision)
         {
-            if (collision.rigidbody == null) { return; }
+            if (collision.rigidbody == null)
+            {            
+                return; 
+            }
 
             IInteractionBehaviour interactionObj;
             if (interactionController.manager.interactionObjectBodies.TryGetValue(collision.rigidbody, out interactionObj))

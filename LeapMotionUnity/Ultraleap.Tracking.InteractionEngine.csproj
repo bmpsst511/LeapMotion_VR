@@ -37,42 +37,42 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\InteractionBehaviour.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\Interface\IInteractionBehaviour.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Utility\GraspedMovementEvent.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\Interface\IGraspedPoseHandler.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\Interface\IInternalInteractionController.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\NonKinematicGraspedMovement.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\Interface\IInternalInteractionManager.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\InteractionController.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\ContactBoneParent.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\KinematicGraspedMovement.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Plugins\GrabClassifierHeuristics.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\UI\Anchors\Anchor.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Utility\PhysicsCallbacks.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Utility\ActivityManager.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\SlidingWindowThrow.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Utility\GraspedMovementEvent.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\NonKinematicGraspedMovement.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\UI\InteractionButton.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Plugins\PhysicsUtility.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Utility\HideInteractionHandWhenControllerMoving.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\UI\Anchors\AnchorGroup.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Utility\Extensions.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\UI\InteractionToggle.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\InteractionManager.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\UI\InteractionSlider.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\InteractionHand.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\Interface\IInteractionBehaviour.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\Interface\IGraspedPoseHandler.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\DefaultXRNodeTrackingProvider.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Utility\KabschSolver.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\HeuristicGrabClassifier.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\InteractionXRController.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\InteractionController.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Utility\Extensions.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\IXRControllerTrackingProvider.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\UI\InteractionToggle.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Utility\IgnoreCollisionsInChildren.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\ContactBoneParent.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Plugins\GrabClassifierHeuristics.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\KinematicGraspedMovement.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\KabschGraspedPose.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\InteractionManager.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\UI\Anchors\Anchor.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Utility\PhysicsCallbacks.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\UI\Anchors\AnchorableBehaviour.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Utility\SimpleFacingCameraCallbacks.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Utility\ActivityManager.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\Interface\IInternalInteractionController.cs" />
+     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Utility\HideInteractionHandWhenControllerMoving.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\ContactBone.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Utility\IgnoreColliderForInteraction.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\SlidingWindowThrow.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\Interface\IGraspedMovementHandler.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\UI\InteractionSlider.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\Internal\Interface\IThrowHandler.cs" />
-     <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Scripts\InteractionHand.cs" />
      <Compile Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Plugins\ColliderUtil.cs" />
      <None Include="Assets\ThirdParty\Ultraleap\Tracking\Interaction Engine\Runtime\Ultraleap.Tracking.InteractionEngine.asmdef" />
     <Reference Include="UnityEngine">
@@ -312,14 +312,14 @@
     <Reference Include="log4netPlastic">
         <HintPath>C:/Users/bmpss/dev/githubFiles/LeapMotion_VR/LeapMotionUnity/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
+    <Reference Include="Valve.Newtonsoft.Json">
+        <HintPath>C:/Users/bmpss/dev/githubFiles/LeapMotion_VR/LeapMotionUnity/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>C:/Users/bmpss/dev/githubFiles/LeapMotion_VR/LeapMotionUnity/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
         <HintPath>C:/Users/bmpss/dev/githubFiles/LeapMotion_VR/LeapMotionUnity/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Valve.Newtonsoft.Json">
-        <HintPath>C:/Users/bmpss/dev/githubFiles/LeapMotion_VR/LeapMotionUnity/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

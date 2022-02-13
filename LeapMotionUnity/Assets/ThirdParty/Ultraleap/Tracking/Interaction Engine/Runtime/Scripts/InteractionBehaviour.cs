@@ -1356,6 +1356,8 @@ namespace Leap.Unity.Interaction
         private bool _wasKinematicBeforeGrasp;
         private bool _justGrasped = false;
 
+        public static bool grasp = false;
+
         private float _dragBeforeGrasp = 0F;
         private float _angularDragBeforeGrasp = 0.05F;
 
@@ -1424,6 +1426,8 @@ namespace Leap.Unity.Interaction
         public void BeginGrasp(List<InteractionController> controllers)
         {
             _justGrasped = true;
+
+            grasp = true;
 
             // End suspension by ending the grasp on the suspending hand,
             // calling EndGrasp immediately.
@@ -1533,6 +1537,7 @@ namespace Leap.Unity.Interaction
                 OnGraspEnd();
 
                 if (_justGrasped) _justGrasped = false;
+                if(grasp) grasp = false;
             }
         }
 

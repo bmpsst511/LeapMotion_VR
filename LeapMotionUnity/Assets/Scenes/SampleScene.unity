@@ -128,6 +128,49 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a5b1d202cd9e1e4083582a935220cdc, type: 3}
   m_PrefabInstance: {fileID: 597025563}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &181265429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 181265431}
+  - component: {fileID: 181265430}
+  m_Layer: 0
+  m_Name: RecognitionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &181265430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181265429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80af5e1a9c6a9a845a9f5539623a59f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &181265431
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181265429}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.005720094, y: 1.9333714, z: -1.5798942}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &439670219 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 7789574680157621950, guid: 8998b2da307be7f419e285784a8495a6, type: 3}
@@ -476,7 +519,7 @@ GameObject:
   - component: {fileID: 735173754}
   - component: {fileID: 735173753}
   m_Layer: 0
-  m_Name: stackSpeed_3
+  m_Name: speedStack_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1350,6 +1393,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1458806928466029328, guid: a4f31c9f6421beb42a81b0031924ff15, type: 3}
+      propertyPath: m_Size.x
+      value: 0.034440726
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458806928466029328, guid: a4f31c9f6421beb42a81b0031924ff15, type: 3}
+      propertyPath: m_Size.y
+      value: 0.029493213
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458806928466029328, guid: a4f31c9f6421beb42a81b0031924ff15, type: 3}
+      propertyPath: m_Size.z
+      value: 0.03200385
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458806928466029328, guid: a4f31c9f6421beb42a81b0031924ff15, type: 3}
+      propertyPath: m_Center.x
+      value: 0.05977735
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458806928466029328, guid: a4f31c9f6421beb42a81b0031924ff15, type: 3}
+      propertyPath: m_Center.y
+      value: -0.0022870302
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458806928466029328, guid: a4f31c9f6421beb42a81b0031924ff15, type: 3}
+      propertyPath: m_Center.z
+      value: -0.008916035
+      objectReference: {fileID: 0}
     - target: {fileID: 5336407799547206891, guid: a4f31c9f6421beb42a81b0031924ff15, type: 3}
       propertyPath: ModelPool.Array.data[0].IsLeftToBeSpawned
       value: 0
@@ -1406,7 +1473,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: HandModels
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5336407799798724152, guid: a4f31c9f6421beb42a81b0031924ff15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2196
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336407799798724152, guid: a4f31c9f6421beb42a81b0031924ff15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2739
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336407799798724152, guid: a4f31c9f6421beb42a81b0031924ff15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.291
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1458806928466029328, guid: a4f31c9f6421beb42a81b0031924ff15, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a4f31c9f6421beb42a81b0031924ff15, type: 3}
 --- !u!1001 &2089498529
 PrefabInstance:
@@ -1415,6 +1495,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1247306119}
     m_Modifications:
+    - target: {fileID: 1580682090112394, guid: 8998b2da307be7f419e285784a8495a6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4299111203110852, guid: 8998b2da307be7f419e285784a8495a6, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1494,7 +1578,7 @@ GameObject:
   - component: {fileID: 2122441760}
   - component: {fileID: 2122441759}
   m_Layer: 0
-  m_Name: stackSpeed_2
+  m_Name: speedStack_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1508,7 +1592,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122441757}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.0493, y: -0.179, z: -1.634562}
+  m_LocalPosition: {x: 0.259, y: -0.179, z: -1.634562}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 1247306119}
@@ -2184,7 +2268,7 @@ GameObject:
   - component: {fileID: 5850850002597228910}
   - component: {fileID: 5850850002597228909}
   m_Layer: 0
-  m_Name: stackSpeed_1
+  m_Name: speedStack_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
