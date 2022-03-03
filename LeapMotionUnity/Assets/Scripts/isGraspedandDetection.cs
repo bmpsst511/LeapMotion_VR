@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class isGraspedandDetection : MonoBehaviour
 {
+    //public Rigidbody cup_1, cup_2, cup_3;
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
