@@ -6,15 +6,11 @@ public class isGraspedandDetection : MonoBehaviour
 {
     //public Rigidbody cup_1, cup_2, cup_3;
     // Start is called before the first frame update
-    void Start()
-    {
-    }
-
     // Update is called once per frame
     void Update()
     {
         //Debug.Log(ContactBone.cup2Detected);
-        if (InteractionBehaviour.grasp)
+        /* if (InteractionBehaviour.grasp)
         {
             //Debug.Log(cup_1.name);
             if(ContactBone.cup1Detected)
@@ -29,6 +25,6 @@ public class isGraspedandDetection : MonoBehaviour
             {
                 Debug.Log("grab obj_3");
             }
-        }
+        } */
     }
 }
