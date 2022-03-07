@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class clock : MonoBehaviour {    
+public class clock : MonoBehaviour {
     [SerializeField] TextMeshProUGUI m_Object;
     private float m_Timer;
     private int m_Hour;//時
