@@ -222,6 +222,7 @@ GameObject:
   - component: {fileID: 42142486}
   - component: {fileID: 42142485}
   - component: {fileID: 42142484}
+  - component: {fileID: 42142491}
   m_Layer: 0
   m_Name: Throwable (short estimation) (5)
   m_TagString: Untagged
@@ -237,7 +238,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42142482}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.047, y: 0.571, z: -0.48599994}
+  m_LocalPosition: {x: -0.502, y: -0.21099997, z: -0.48599994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1915864624}
@@ -331,10 +332,34 @@ MonoBehaviour:
         m_CallState: 2
   onAttachedToHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 42142491}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: disableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDetachedFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 42142491}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: enableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &42142487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,11 +492,23 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!114 &42142491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42142482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed9ed454001e1f48ba0b2c22a8b3320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &44538309
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,6 +997,7 @@ GameObject:
   - component: {fileID: 283961506}
   - component: {fileID: 283961505}
   - component: {fileID: 283961504}
+  - component: {fileID: 283961511}
   m_Layer: 0
   m_Name: Throwable (short estimation) (8)
   m_TagString: Untagged
@@ -975,7 +1013,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283961502}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.37300006, y: 0.571, z: -1.634562}
+  m_LocalPosition: {x: -0.08199993, y: -0.21099997, z: -1.634562}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1625147566}
@@ -1069,10 +1107,34 @@ MonoBehaviour:
         m_CallState: 2
   onAttachedToHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 283961511}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: disableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDetachedFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 283961511}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: enableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &283961507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1205,11 +1267,23 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!114 &283961511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283961502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed9ed454001e1f48ba0b2c22a8b3320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &296642562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3302,6 +3376,7 @@ GameObject:
   - component: {fileID: 870302436}
   - component: {fileID: 870302435}
   - component: {fileID: 870302434}
+  - component: {fileID: 870302441}
   m_Layer: 0
   m_Name: Throwable (short estimation) (9)
   m_TagString: Untagged
@@ -3317,7 +3392,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870302432}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.267, y: 0.571, z: -1.634562}
+  m_LocalPosition: {x: -0.188, y: -0.033, z: -1.634562}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 554027406}
@@ -3411,10 +3486,34 @@ MonoBehaviour:
         m_CallState: 2
   onAttachedToHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 870302441}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: disableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDetachedFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 870302441}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: enableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &870302437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3547,11 +3646,23 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!114 &870302441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870302432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed9ed454001e1f48ba0b2c22a8b3320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &897798452
 GameObject:
   m_ObjectHideFlags: 0
@@ -3568,6 +3679,7 @@ GameObject:
   - component: {fileID: 897798456}
   - component: {fileID: 897798455}
   - component: {fileID: 897798454}
+  - component: {fileID: 897798461}
   m_Layer: 0
   m_Name: Throwable (short estimation) (4)
   m_TagString: Untagged
@@ -3583,7 +3695,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897798452}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0609999, y: 0.571, z: -0.987}
+  m_LocalPosition: {x: -0.39400008, y: -0.21099997, z: -0.987}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1099515365}
@@ -3677,10 +3789,34 @@ MonoBehaviour:
         m_CallState: 2
   onAttachedToHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 897798461}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: disableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDetachedFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 897798461}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: enableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &897798457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3813,11 +3949,23 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!114 &897798461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897798452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed9ed454001e1f48ba0b2c22a8b3320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &909084680
 GameObject:
   m_ObjectHideFlags: 0
@@ -4060,6 +4208,7 @@ GameObject:
   - component: {fileID: 1020598225}
   - component: {fileID: 1020598224}
   - component: {fileID: 1020598223}
+  - component: {fileID: 1020598230}
   m_Layer: 0
   m_Name: Throwable (short estimation) (3)
   m_TagString: Untagged
@@ -4075,7 +4224,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020598221}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.173, y: 0.571, z: -0.987}
+  m_LocalPosition: {x: -0.282, y: -0.21099997, z: -0.987}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 741324699}
@@ -4169,10 +4318,34 @@ MonoBehaviour:
         m_CallState: 2
   onAttachedToHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1020598230}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: disableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDetachedFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1020598230}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: enableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1020598226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4305,11 +4478,23 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!114 &1020598230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020598221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed9ed454001e1f48ba0b2c22a8b3320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1099515364
 GameObject:
   m_ObjectHideFlags: 0
@@ -5008,6 +5193,7 @@ GameObject:
   - component: {fileID: 1305541048}
   - component: {fileID: 1305541047}
   - component: {fileID: 1305541046}
+  - component: {fileID: 1305541053}
   m_Layer: 0
   m_Name: Throwable (short estimation) (7)
   m_TagString: Untagged
@@ -5023,7 +5209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305541044}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.481, y: 0.571, z: -1.634562}
+  m_LocalPosition: {x: 0.026000023, y: -0.21099997, z: -1.634562}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 675023749}
@@ -5117,10 +5303,34 @@ MonoBehaviour:
         m_CallState: 2
   onAttachedToHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1305541053}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: disableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDetachedFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1305541053}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: enableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1305541049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5253,11 +5463,23 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!114 &1305541053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305541044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed9ed454001e1f48ba0b2c22a8b3320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1380339611
 GameObject:
   m_ObjectHideFlags: 0
@@ -5483,6 +5705,7 @@ GameObject:
   - component: {fileID: 1498321793}
   - component: {fileID: 1498321792}
   - component: {fileID: 1498321791}
+  - component: {fileID: 1498321798}
   m_Layer: 0
   m_Name: Throwable (short estimation) (2)
   m_TagString: Untagged
@@ -5498,7 +5721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498321789}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.279, y: 0.571, z: -0.5749999}
+  m_LocalPosition: {x: -0.17599997, y: -0.21099997, z: -0.5749999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1504069862}
@@ -5592,10 +5815,34 @@ MonoBehaviour:
         m_CallState: 2
   onAttachedToHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1498321798}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: disableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDetachedFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1498321798}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: enableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1498321794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5728,11 +5975,23 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!114 &1498321798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498321789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed9ed454001e1f48ba0b2c22a8b3320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1504069861
 GameObject:
   m_ObjectHideFlags: 0
@@ -8890,6 +9149,7 @@ GameObject:
   - component: {fileID: 2029297079}
   - component: {fileID: 2029297078}
   - component: {fileID: 2029297077}
+  - component: {fileID: 2029297084}
   m_Layer: 0
   m_Name: Throwable (short estimation) (6)
   m_TagString: Untagged
@@ -8905,7 +9165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029297075}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1530001, y: 0.571, z: -0.486}
+  m_LocalPosition: {x: -0.6080001, y: -0.21099997, z: -0.486}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1923087213}
@@ -8999,10 +9259,34 @@ MonoBehaviour:
         m_CallState: 2
   onAttachedToHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2029297084}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: disableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDetachedFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2029297084}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: enableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2029297080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9135,11 +9419,23 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
+--- !u!114 &2029297084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029297075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed9ed454001e1f48ba0b2c22a8b3320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7783617066801158480
 Transform:
   m_ObjectHideFlags: 0
@@ -9148,7 +9444,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7784839226917390906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.387, y: 0.571, z: -0.575}
+  m_LocalPosition: {x: -0.06799999, y: -0.21099997, z: -0.575}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1598644459}
@@ -9171,6 +9467,7 @@ GameObject:
   - component: {fileID: 7899245444432244308}
   - component: {fileID: 7899245503428248090}
   - component: {fileID: 7899245443768447092}
+  - component: {fileID: 7784839226917390907}
   m_Layer: 0
   m_Name: Throwable (short estimation) (1)
   m_TagString: Untagged
@@ -9178,6 +9475,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7784839226917390907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7784839226917390906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed9ed454001e1f48ba0b2c22a8b3320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &7833197085372935712
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9189,7 +9498,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -9332,10 +9641,34 @@ MonoBehaviour:
         m_CallState: 2
   onAttachedToHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7784839226917390907}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: disableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDetachedFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7784839226917390907}
+        m_TargetAssemblyTypeName: kinematicSwitch, Assembly-CSharp
+        m_MethodName: enableKin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7899245502197842402
 MonoBehaviour:
   m_ObjectHideFlags: 0
