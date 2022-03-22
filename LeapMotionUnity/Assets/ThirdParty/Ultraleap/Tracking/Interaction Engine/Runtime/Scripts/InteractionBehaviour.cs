@@ -1466,7 +1466,8 @@ namespace Leap.Unity.Interaction
                 _angularDragBeforeGrasp = rigidbody.angularDrag;
 
                 // Remember kinematic state.
-                _wasKinematicBeforeGrasp = rigidbody.isKinematic;
+                //_wasKinematicBeforeGrasp = rigidbody.isKinematic;
+                _wasKinematicBeforeGrasp = rigidbody.isKinematic = false; //let object won't go through table
                 switch (graspedMovementType)
                 {
                     case GraspedMovementType.Inherit: break; // no change
@@ -1527,7 +1528,8 @@ namespace Leap.Unity.Interaction
                 rigidbody.angularDrag = _angularDragBeforeGrasp;
 
                 // Revert kinematic state.
-                rigidbody.isKinematic = _wasKinematicBeforeGrasp;
+                //rigidbody.isKinematic = _wasKinematicBeforeGrasp;
+                rigidbody.isKinematic = true; //add kinmenatic when release hand
 
                 if (controllers.Count == 1)
                 {
