@@ -270,25 +270,25 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Assets\SteamVR\Input\Plugins\JSON.NET\Valve.Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Assets\SteamVR\Input\Plugins\JSON.NET\Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
@@ -639,67 +639,67 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.OpenVR">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.XR.OpenVR.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.XR.OpenVR.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Management.Editor">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Subsystem.Registration">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.OpenVR.Editor">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.XR.OpenVR.Editor.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.XR.OpenVR.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Management">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-        <HintPath>C:\Users\lee\Documents\GitHub\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+        <HintPath>C:\Users\bmpss\dev\githubFiles\LeapMotion_VR\LeapMotionUnity\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -718,6 +718,10 @@
     <ProjectReference Include="Ultraleap.Tracking.Hands.csproj">
       <Project>{19023244-742d-587c-bb77-b3458d68b680}</Project>
       <Name>Ultraleap.Tracking.Hands</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{618f5b46-729a-7c57-2b3d-2ac880287b5b}</Project>
+      <Name>SteamVR_Actions</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
       <Project>{67800589-c35b-a09c-dfa1-4d3c6a2f5d03}</Project>

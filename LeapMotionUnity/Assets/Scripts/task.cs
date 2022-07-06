@@ -11,7 +11,7 @@ public class task : MonoBehaviour {
     float x,y,z;
 
     void Start(){
-        cupPositions = new Vector3[cups.Length];
+        /*cupPositions = new Vector3[cups.Length];
         for(int i = 0; i<9; i++){
             cupPositions[i] = cups[i].transform.localPosition;
             x = Random.Range(-0.2f, 0.2f);
@@ -22,7 +22,7 @@ public class task : MonoBehaviour {
             cupPositions[i].z += z;
             cups[i].transform.localPosition = cupPositions[i];
         }
-        Debug.Log(y);
+        Debug.Log(y);*/
     }
 
     public void assignTask() //this function call by StageRoot/Cube UI Panel/Cube UI Buttons/Cube UI Button(1)
